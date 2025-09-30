@@ -1,6 +1,7 @@
 import assignment.age.AgeCheck;
 import assignment.car.Car;
 import assignment.division.MyMath;
+import assignment.telephone.PhoneUtil;
 import exceptions.*;
 
 import assignment.bank.BankAccount;
@@ -87,6 +88,14 @@ public class Main {
             car.setSpeed(300);
             car.setSpeed(305);
         } catch (SpeedLimitExceededException e) {
+            e.printStackTrace();
+        }
+
+        // Assignment 8 - Telephone number
+        try {
+            PhoneUtil.validatePhoneNumber("1234567890");
+            PhoneUtil.validatePhoneNumber("123");
+        } catch (InvalidPhoneNumberException | NotNumericException e) {
             e.printStackTrace();
         }
     }

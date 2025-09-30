@@ -57,9 +57,9 @@
 
 ### 8. Telephone number
 **Assignment:** Write a method `validatePhoneNumber(String number)`.
-- [ ] If the number is not exactly 10 digits long, throw `InvalidPhoneNumberException`.
-- [ ] If the number contains characters other than digits, throw `NotNumericException`.
-- [ ] If the number is valid, write *"Phone number accepted"*.
+- [x] If the number is not exactly 10 digits long, throw `InvalidPhoneNumberException`.
+- [x] If the number contains characters other than digits, throw `NotNumericException`.
+- [x] If the number is valid, write *"Phone number accepted"*.
 
 ---
 
