@@ -1,5 +1,6 @@
 import assignment.age.AgeCheck;
 import assignment.car.Car;
+import assignment.cooking.Oven;
 import assignment.division.MyMath;
 import assignment.email.EmailUtil;
 import assignment.telephone.PhoneUtil;
@@ -109,5 +110,10 @@ public class Main {
         }
 
         // Assignment 10 - Cooking
+        try {
+            Oven.bake(-10, 20);
+        } catch (InvalidTimeException | TooHotException | TooColdException e) {
+            e.printStackTrace();
+        }
     }
 }

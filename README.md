@@ -73,9 +73,9 @@
 
 ### 10. Cooking
 **Assignment:** Create a class `Oven` with a method `bake(int minutes, int temperature)`.
-- [ ] If minutes is `0` or negative, throw `InvalidTimeException`.
-- [ ] If temperature is below `50`, `throw TooColdException`.
-- [ ] If temperature is above `300`, `throw TooHotException`.
-- [ ] Otherwise, write *"The food is ready in X minutes at Y°C"*.
+- [x] If minutes is `0` or negative, throw `InvalidTimeException`.
+- [x] If temperature is below `50`, `throw TooColdException`.
+- [x] If temperature is above `300`, `throw TooHotException`.
+- [x] Otherwise, write *"The food is ready in X minutes at Y°C"*.
 
 ---
