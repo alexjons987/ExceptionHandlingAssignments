@@ -1,19 +1,20 @@
 import assignment.age.AgeCheck;
-import assignment.age.UnderAgeException;
+import exceptions.UnderAgeException;
 
 import assignment.bank.BankAccount;
-import assignment.bank.InsufficientFundsException;
+import exceptions.InsufficientFundsException;
 
 import assignment.password.PasswordUtil;
-import assignment.password.PasswordTooShortException;
-import assignment.password.PasswordMissingNumberException;
+import exceptions.PasswordTooShortException;
+import exceptions.PasswordMissingNumberException;
 
-import assignment.storage.InvalidAmountException;
-import assignment.storage.OutOfStockException;
 import assignment.storage.Product;
-import assignment.temperature.BelowAbsoluteZeroException;
+import exceptions.InvalidAmountException;
+import exceptions.OutOfStockException;
+
 import assignment.temperature.TempUtil;
-import assignment.temperature.TooHotException;
+import exceptions.BelowAbsoluteZeroException;
+import exceptions.TooHotException;
 
 import java.util.Scanner;
 

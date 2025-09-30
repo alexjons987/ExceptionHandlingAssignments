@@ -1,5 +1,7 @@
 package assignment.bank;
 
+import exceptions.InsufficientFundsException;
+
 public class BankAccount {
     int balance = 0;
 

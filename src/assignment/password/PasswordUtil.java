@@ -1,5 +1,8 @@
 package assignment.password;
 
+import exceptions.PasswordMissingNumberException;
+import exceptions.PasswordTooShortException;
+
 public class PasswordUtil {
     public static boolean isPasswordValid(String p) throws PasswordTooShortException, PasswordMissingNumberException {
         if (p.length() < 8) {

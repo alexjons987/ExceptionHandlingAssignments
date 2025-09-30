@@ -1,5 +1,8 @@
 package assignment.storage;
 
+import exceptions.InvalidAmountException;
+import exceptions.OutOfStockException;
+
 public class Product {
     String name;
     int quantity;

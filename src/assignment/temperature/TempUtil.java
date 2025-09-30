@@ -1,5 +1,8 @@
 package assignment.temperature;
 
+import exceptions.BelowAbsoluteZeroException;
+import exceptions.TooHotException;
+
 public class TempUtil {
     public static boolean isAcceptableTemp(int temperature) throws BelowAbsoluteZeroException, TooHotException {
         if (temperature <= -273) {
