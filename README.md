@@ -65,9 +65,9 @@
 
 ### 9. E-mail address
 **Assignment:** Write a method `checkEmail(String email)`.
-- [ ] If the email address does not contain `@`, throw `MissingAtSymbolException`.
-- [ ] If the email address does not end in `.com` or `.se`, throw `InvalidDomainException`.
-- [ ] Otherwise, write *"Email address approved"*.
+- [x] If the email address does not contain `@`, throw `MissingAtSymbolException`.
+- [x] If the email address does not end in `.com` or `.se`, throw `InvalidDomainException`.
+- [x] Otherwise, write *"Email address approved"*.
 
 ---
 

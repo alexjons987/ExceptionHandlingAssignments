@@ -1,6 +1,7 @@
 import assignment.age.AgeCheck;
 import assignment.car.Car;
 import assignment.division.MyMath;
+import assignment.email.EmailUtil;
 import assignment.telephone.PhoneUtil;
 import exceptions.*;
 
@@ -98,5 +99,15 @@ public class Main {
         } catch (InvalidPhoneNumberException | NotNumericException e) {
             e.printStackTrace();
         }
+
+        // Assignment 9 - E-mail address
+        try {
+            EmailUtil.checkEmail("alexjons987@gmail.com");
+            EmailUtil.checkEmail("alexjons987@exception.xyz");
+        } catch (UnsupportedDomainException | MissingAtSymbolException e) {
+            e.printStackTrace();
+        }
+
+        // Assignment 10 - Cooking
     }
 }
