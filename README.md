@@ -32,10 +32,10 @@
 
 ### 5. Storage facility
 **Assignment:** Create a class `Product` with name and quantity in stock.
-- [ ] Make a method `sell(int amount)`.
-- [ ] If you try to sell more products than are in stock, throw `OutOfStockException`.
-- [ ] If you try to sell `0` or a negative quantity, throw `InvalidAmountException`.
-- [ ] Otherwise, reduce the stock and print a new quantity.
+- [x] Make a method `sell(int amount)`.
+- [x] If you try to sell more products than are in stock, throw `OutOfStockException`.
+- [x] If you try to sell `0` or a negative quantity, throw `InvalidAmountException`.
+- [x] Otherwise, reduce the stock and print a new quantity.
 
 ---
 

@@ -8,6 +8,9 @@ import assignment.password.PasswordUtil;
 import assignment.password.PasswordTooShortException;
 import assignment.password.PasswordMissingNumberException;
 
+import assignment.storage.InvalidAmountException;
+import assignment.storage.OutOfStockException;
+import assignment.storage.Product;
 import assignment.temperature.BelowAbsoluteZeroException;
 import assignment.temperature.TempUtil;
 import assignment.temperature.TooHotException;
@@ -62,6 +65,15 @@ public class Main {
             TempUtil.isAcceptableTemp(temperature);
             System.out.println("Normal temps!");
         } catch (BelowAbsoluteZeroException | TooHotException e) {
+            e.printStackTrace();
+        }
+
+        // Assignment 5 - Storage facility
+        Product genericProduct = new Product("Some product", 10);
+        try {
+            genericProduct.sell(5); // OK
+            genericProduct.sell(10); // Will throw exception
+        } catch (InvalidAmountException | OutOfStockException e) {
             e.printStackTrace();
         }
     }
