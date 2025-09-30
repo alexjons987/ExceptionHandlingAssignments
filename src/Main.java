@@ -8,6 +8,10 @@ import assignment.password.PasswordUtil;
 import assignment.password.PasswordTooShortException;
 import assignment.password.PasswordMissingNumberException;
 
+import assignment.temperature.BelowAbsoluteZeroException;
+import assignment.temperature.TempUtil;
+import assignment.temperature.TooHotException;
+
 import java.util.Scanner;
 
 public class Main {
@@ -42,16 +46,23 @@ public class Main {
         boolean isValidPass = false;
         try {
             isValidPass = PasswordUtil.isPasswordValid(password);
-        } catch (PasswordTooShortException e) {
-            e.printStackTrace();
-        } catch (PasswordMissingNumberException e) {
+        } catch (PasswordTooShortException | PasswordMissingNumberException e) {
             e.printStackTrace();
         }
 
         if (isValidPass) {
             System.out.println("Password is valid!");
         }
+
+        // Assignment 4 - Temperature check
+        System.out.print("Enter temperature (°C): ");
+        int temperature = Integer.parseInt(scanner.next());
+
+        try {
+            TempUtil.isAcceptableTemp(temperature);
+            System.out.println("Normal temps!");
+        } catch (BelowAbsoluteZeroException | TooHotException e) {
+            e.printStackTrace();
+        }
     }
-
-
 }
