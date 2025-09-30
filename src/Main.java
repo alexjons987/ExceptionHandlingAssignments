@@ -1,4 +1,5 @@
 import assignment.age.AgeCheck;
+import assignment.car.Car;
 import assignment.division.MyMath;
 import exceptions.*;
 
@@ -77,6 +78,15 @@ public class Main {
             MyMath.division(1, 2); // OK
             MyMath.division(1, 0); // Exception
         } catch (DivisionByZeroException e) {
+            e.printStackTrace();
+        }
+
+        // Assignment 7 - Car speed
+        Car car = new Car();
+        try {
+            car.setSpeed(300);
+            car.setSpeed(305);
+        } catch (SpeedLimitExceededException e) {
             e.printStackTrace();
         }
     }

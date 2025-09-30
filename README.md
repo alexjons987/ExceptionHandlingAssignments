@@ -49,9 +49,9 @@
 
 ### 7. Car speed
 **Assignment:** Create a class `Car` with a method `setSpeed(int speed)`.
-- [ ] If the speed is below `0`, throw NegativeSpeedException.
-- [ ] If the speed is above `300`, throw `SpeedLimitExceededException`.
-- [ ] Otherwise, write *"Speed set to X km/h"*.
+- [x] If the speed is below `0`, throw NegativeSpeedException.
+- [x] If the speed is above `300`, throw `SpeedLimitExceededException`.
+- [x] Otherwise, write *"Speed set to X km/h"*.
 
 ---
 
