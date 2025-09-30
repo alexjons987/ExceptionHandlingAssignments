@@ -16,9 +16,9 @@
 
 ### 3. Password check
 **Assignment:** Write a method that accepts a password as a parameter.
-- [ ] If the password is shorter than 8 characters, throw `PasswordTooShortException`.
-- [ ] If the password does not contain at least one digit, throw `PasswordMissingNumberException`.
-- [ ] If the password is accepted, write *"Password accepted"*.
+- [x] If the password is shorter than 8 characters, throw `PasswordTooShortException`.
+- [x] If the password does not contain at least one digit, throw `PasswordMissingNumberException`.
+- [x] If the password is accepted, write *"Password accepted"*.
 
 ---
 
