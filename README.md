@@ -8,9 +8,9 @@
 
 ### 2. Bank account
 **Assignment:** Create a class `BankAccount` with a balance.
-- [ ] Make a method `withdraw(int amount)`.
-- [ ] If you try to withdraw more than the balance, throw your own exception `InsufficientFundsException`.
-- [ ] Try first depositing money, then withdrawing more than what is in the account.
+- [x] Make a method `withdraw(int amount)`.
+- [x] If you try to withdraw more than the balance, throw your own exception `InsufficientFundsException`.
+- [x] Try first depositing money, then withdrawing more than what is in the account.
 
 ---
 
