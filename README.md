@@ -41,9 +41,9 @@
 
 ### 6. Division
 **Assignment:** Write a method that divides two numbers.
-- [ ] If the denominator is `0`, throw `DivisionByZeroException`.
-- [ ] The program should catch the exception and print *"You cannot divide by zero"*.
-- [ ] Otherwise, print the result.
+- [x] If the denominator is `0`, throw `DivisionByZeroException`.
+- [x] The program should catch the exception and print *"You cannot divide by zero"*.
+- [x] Otherwise, print the result.
 
 ---
 

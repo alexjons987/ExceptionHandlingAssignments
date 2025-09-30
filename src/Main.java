@@ -1,20 +1,14 @@
 import assignment.age.AgeCheck;
-import exceptions.UnderAgeException;
+import assignment.division.MyMath;
+import exceptions.*;
 
 import assignment.bank.BankAccount;
-import exceptions.InsufficientFundsException;
 
 import assignment.password.PasswordUtil;
-import exceptions.PasswordTooShortException;
-import exceptions.PasswordMissingNumberException;
 
 import assignment.storage.Product;
-import exceptions.InvalidAmountException;
-import exceptions.OutOfStockException;
 
 import assignment.temperature.TempUtil;
-import exceptions.BelowAbsoluteZeroException;
-import exceptions.TooHotException;
 
 import java.util.Scanner;
 
@@ -73,8 +67,16 @@ public class Main {
         Product genericProduct = new Product("Some product", 10);
         try {
             genericProduct.sell(5); // OK
-            genericProduct.sell(10); // Will throw exception
+            genericProduct.sell(10); // Exception
         } catch (InvalidAmountException | OutOfStockException e) {
+            e.printStackTrace();
+        }
+
+        // Assignment 6 - Division
+        try {
+            MyMath.division(1, 2); // OK
+            MyMath.division(1, 0); // Exception
+        } catch (DivisionByZeroException e) {
             e.printStackTrace();
         }
     }
